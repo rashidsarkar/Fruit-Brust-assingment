@@ -50,21 +50,38 @@
   <header class="container mx-auto">
     <div class="navbar lg:bg-main-bg lg:rounded-[600px] flex-row-reverse lg:flex-row ">
       <div class="navbar-end">
-        <div class="dropdown">
+        <div class="dropdown ">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
           </label>
           <ul tabindex="0"
-            class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#121212] text-lg font-medium text-center">
-            <li><a class="inline-block text-center">Home</a></li>
+            class="menu bg-main-bg menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#121212] text-lg font-medium text-center">
+            <li><a class="inline-block text-center text-white">Home</a></li>
 
-            <li><a class="inline-block text-center">About Us</a></li>
-            <li><a class="inline-block text-center">Shop</a></li>
-            <li><a class="inline-block text-center">All Fruits</a></li>
+            <li><a class="inline-block text-center text-white">About Us</a></li>
+            <li><a class="inline-block text-center text-white">Shop</a></li>
+            <li><a class="inline-block text-center text-white">All Fruits</a></li>
+            
+            <!-- sarch  -->
+            <li>
+              
+                <form method="GET" class="p-0">
+                  <div class="relative text-white focus-within:text-gray-400 ">
+                    <span class="absolute inset-y-0 right-1 flex items-center pl-2">
+                      <button type="submit" class="p-1 text-gray-800 focus:outline-none focus:shadow-outline">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                      </button>
+                    </span>
+                    <input type="search" name="q" class="py-2 text-sm text-white border bg-white rounded-md pl-10 focus:outline-none focus:bg-white " placeholder="Search here" autocomplete="off">
+                  </div>
+                </form>
+              
+            </li>
+            <!-- sarch  -->
           </ul>
+          <!-- sarch  -->
+       
+          <!-- sarch  -->
         </div>
         <div class="navbar hidden  lg:flex">
           <ul class="menu menu-horizontal px-1  text-white text-lg font-medium">
@@ -656,7 +673,7 @@
               <p class="text-center font-bold text-2xl text-white">
                 Awlad Hossain
               </p>
-              <p class="text-center font-medium text-base text-second-text text-white">Fruits Expert</p>
+              <p class="text-center font-medium text-base  text-white ">Fruits Expert</p>
 
 
 
@@ -683,7 +700,7 @@
               <p class="text-center font-bold text-2xl text-white">
                 Safia Chowdhury
               </p>
-              <p class="text-center font-medium text-base text-second-text text-white">Fruits Expert</p>
+              <p class="text-center font-medium text-base  text-white">Fruits Expert</p>
 
 
 
@@ -710,7 +727,7 @@
               <p class="text-center font-bold text-2xl text-white">
                 Rokib Hossain
               </p>
-              <p class="text-center font-medium text-base text-second-text text-white">Fruits Expert</p>
+              <p class="text-center font-medium text-base  text-white">Fruits Expert</p>
 
 
 
@@ -737,7 +754,7 @@
               <p class="text-center font-bold text-2xl text-white">
                 Chaity
               </p>
-              <p class="text-center font-medium text-base text-second-text text-white">Fruits Expert</p>
+              <p class="text-center font-medium text-base  text-white">Fruits Expert</p>
 
 
 
@@ -995,13 +1012,15 @@
 
   </main>
  
-  <footer class="footer footer-center p-10 bg-main-text text-primary-content">
+  <footer class="footer footer-center p-5 lg:p-10 bg-main-text text-primary-content">
     <div>
-      <a class="cursor-pointer flex gap-4  normal-case lg:h-14  justify-center items-center"> <img src="images/logo.png"
-          class="h-4/5" alt="">
-        <p class="text-4xl text-main-text lg:text-white font-bold">Fruit Burst</p>
-      </a>
-      <ul class="  mt-3 text-white text-lg font-medium flex gap-8">
+      <div class="flex justify-center items-center gap-4 cursor-pointer">
+        <img src="images/logo.png"
+        class=" lg:h-4/5" alt="">
+        <p class="text-4xl  text-main-text text-white font-bold">Fruit Burst</p>
+      </div>
+     
+      <ul class="  text-center  mt-3 text-white text-lg font-medium flex gap-4 lg:gap-8 flex-wrap justify-center ">
         <li class="cursor-pointer"><a>Home</a></li>
 
         <li class="cursor-pointer"><a>About Us</a></li>
@@ -1013,9 +1032,9 @@
 
     </div>
     <div>
-      <div class="grid grid-flow-col gap-10">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
-          class="cursor-pointer">
+      <div class=" grid grid-flow-col lg:gap-10 gap-4">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+          class="cursor-pointer lg:h-10 lg:w-10 h-8 w-8">
           <g clip-path="url(#clip0_13_3499)">
             <path
               d="M40 7.5975C38.5125 8.25 36.9275 8.6825 35.275 8.8925C36.975 7.8775 38.2725 6.2825 38.8825 4.36C37.2975 5.305 35.5475 5.9725 33.6825 6.345C32.1775 4.7425 30.0325 3.75 27.6925 3.75C23.1525 3.75 19.4975 7.435 19.4975 11.9525C19.4975 12.6025 19.5525 13.2275 19.6875 13.8225C12.87 13.49 6.8375 10.2225 2.785 5.245C2.0775 6.4725 1.6625 7.8775 1.6625 9.39C1.6625 12.23 3.125 14.7475 5.305 16.205C3.9875 16.18 2.695 15.7975 1.6 15.195C1.6 15.22 1.6 15.2525 1.6 15.285C1.6 19.27 4.4425 22.58 8.17 23.3425C7.5025 23.525 6.775 23.6125 6.02 23.6125C5.495 23.6125 4.965 23.5825 4.4675 23.4725C5.53 26.72 8.545 29.1075 12.13 29.185C9.34 31.3675 5.7975 32.6825 1.9625 32.6825C1.29 32.6825 0.645 32.6525 0 32.57C3.6325 34.9125 7.9375 36.25 12.58 36.25C27.67 36.25 35.92 23.75 35.92 12.915C35.92 12.5525 35.9075 12.2025 35.89 11.855C37.5175 10.7 38.885 9.2575 40 7.5975Z"
@@ -1027,7 +1046,7 @@
             </clipPath>
           </defs>
         </svg>
-        <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+        <svg class="cursor-pointer lg:h-10 lg:w-10 h-8 w-8" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
           fill="none">
           <g clip-path="url(#clip0_13_3502)">
             <path
@@ -1043,14 +1062,14 @@
             </clipPath>
           </defs>
         </svg>
-        <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="58" height="40" viewBox="0 0 58 40"
+        <svg class="cursor-pointer lg:h-10 lg:w-10 h-8 w-8 " xmlns="http://www.w3.org/2000/svg" width="58" height="40" viewBox="0 0 58 40"
           fill="none">
           <path
             d="M55.9526 6.25899C55.294 3.81162 53.3644 1.88249 50.9175 1.22347C46.4468 0 28.5643 0 28.5643 0C28.5643 0 10.6821 0 6.21148 1.17683C3.81162 1.83542 1.83498 3.81206 1.17639 6.25899C0 10.7292 0 20 0 20C0 20 0 29.3174 1.17639 33.741C1.83542 36.1879 3.76455 38.1175 6.21192 38.7765C10.7292 40 28.5647 40 28.5647 40C28.5647 40 46.4468 40 50.9175 38.8232C53.3649 38.1646 55.294 36.235 55.953 33.7881C57.1294 29.3174 57.1294 20.0471 57.1294 20.0471C57.1294 20.0471 57.1765 10.7292 55.9526 6.25899Z"
             fill="white" />
           <path d="M22.8706 28.5648L37.7409 20.0001L22.8706 11.4354V28.5648Z" fill="#FF0000" />
         </svg>
-        <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+        <svg class="cursor-pointer lg:h-10 lg:w-10 h-8 w-8" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
           fill="none">
           <path
             d="M36.1214 36V35.9988H36.1294V24.2628C36.1294 18.5216 34.8934 14.0988 28.1814 14.0988C24.9546 14.0988 22.7894 15.8696 21.9054 17.548H21.8122V14.6348H15.4482V35.9988H22.075V25.42C22.075 22.6348 22.603 19.9412 26.0522 19.9412C29.451 19.9412 29.5014 23.12 29.5014 25.5984V36H36.1214Z"
@@ -1060,7 +1079,7 @@
             d="M7.97219 4C5.85059 4 4.12939 5.7212 4.12939 7.8428C4.12939 9.9644 5.85059 11.7216 7.97219 11.7216C10.0938 11.7216 11.815 9.9644 11.815 7.8428C11.8134 5.7212 10.0922 4 7.97219 4Z"
             fill="white" />
         </svg>
-        <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+        <svg class="cursor-pointer lg:h-10 lg:w-10 h-8 w-8" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
           fill="none">
           <g clip-path="url(#clip0_13_3516)">
             <path
@@ -1079,7 +1098,7 @@
             </clipPath>
           </defs>
         </svg>
-        <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+        <svg class="cursor-pointer lg:h-10 lg:w-10 h-8 w-8" xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
           fill="none">
           <g clip-path="url(#clip0_13_3521)">
             <path
