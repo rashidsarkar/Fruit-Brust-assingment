@@ -48,7 +48,7 @@
 
 <body class="lato-font">
   <header class="container mx-auto">
-    <div class="navbar lg:bg-main-bg lg:rounded-[600px] flex-row-reverse lg:flex-row ">
+    <div class="navbar lg:bg-main-bg lg:rounded-[600px] flex-row-reverse lg:flex-row  ">
       <div class="navbar-end">
         <div class="dropdown ">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <a class="btn btn-ghost normal-case lg:h-14  justify-center items-center"> <img src="images/logo.png"
+      <a class="btn btn-ghost normal-case   lg:h-14  justify-center items-center"> <img src="images/logo.png"
           class="h-4/5" alt="">
         <p class="text-4xl text-main-text lg:text-white font-bold">Fruit Burst</p>
       </a>
@@ -120,8 +120,8 @@
   <main class="container mx-auto px-2">
     <!-- baner slider -->
     <section class="lg:my-14 my-6">
-      <div class="carousel w-full h-52 lg:h-auto rounded-lg">
-        <div id="slide1" class="carousel-item relative w-full h-52 lg:h-auto">
+      <div class="carousel w-full  h-52 md:h-[310px]   lg:h-auto rounded-lg">
+        <div id="slide1" class="carousel-item relative md:h-[310px]  w-full h-52 lg:h-auto">
           <img src="images/banner1.png" class="w-full" />
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
           <div class="absolute inset-0 flex items-center justify-center">
@@ -145,7 +145,7 @@
               class="flex items-center justify-center w-7 h-7 rounded-full lg:w-14 lg:h-14  lg:btn btn-circle  bg-black text-white border-none hover:bg-black">❯</a>
           </div>
         </div>
-        <div id="slide2" class="carousel-item relative w-full h-52 lg:h-auto">
+        <div id="slide2" class="carousel-item relative md:h-[310px]  w-full h-52 lg:h-auto">
           <img src="images/banner2.png" class="w-full" />
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
           <div class="absolute inset-0 flex items-center justify-center">
@@ -169,7 +169,7 @@
               class="flex items-center justify-center w-7 h-7 rounded-full lg:w-14 lg:h-14  lg:btn btn-circle  bg-black text-white border-none hover:bg-black">❯</a>
           </div>
         </div>
-        <div id="slide3" class="carousel-item relative w-full h-52 lg:h-auto">
+        <div id="slide3" class="carousel-item relative md:h-[310px]  w-full h-52 lg:h-auto">
           <img src="images/banner3.png" class="w-full" />
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
           <div class="absolute inset-0 flex items-center justify-center">
@@ -193,7 +193,7 @@
               class="flex items-center justify-center w-7 h-7 rounded-full lg:w-14 lg:h-14  lg:btn btn-circle  bg-black text-white border-none hover:bg-black">❯</a>
           </div>
         </div>
-        <div id="slide4" class="carousel-item relative w-full h-52 lg:h-auto">
+        <div id="slide4" class="carousel-item relative md:h-[310px]  w-full h-52 lg:h-auto">
           <img src="images/banner4.png" class="w-full" />
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
           <div class="absolute inset-0 flex items-center justify-center">
@@ -255,7 +255,7 @@
 
         <div class="lg:text-left text-center">
           <h3 class="text-2xl text-[#121212] font-extrabold  lg:text-5xl">Deal of the day</h3>
-          <p class="text-base text-second-text font-medium lg:mt-6 my-4">Contrary to popular belief, is not simply
+          <p class="text-base text-second-text font-medium md:w-[532px] lg:mt-6 my-4">Contrary to popular belief, is not simply
             random text.
             It has roots in a
             piece of classical <br class="hidden lg:block"> Latin literature from 45 BC, making it over 2000 years old.
@@ -649,7 +649,7 @@
     <section class="my-24">
       <div class="hero lg:min-h-[600px] rounded-lg h-auto" style="background-image: url(images/team.png);">
         <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
-        <div class="hero-content text-center text-neutral-content grid lg:mb-80 mb-[81rem]  ">
+        <div class="hero-content text-center text-neutral-content grid mb-[81rem]   lg:mb-80 md:mb-[675px]   ">
           <div class="max-w-[37rem]">
             <h1 class="mb-5 lg:text-5xl font-bold text-2xl text-white ">Meet the team section</h1>
             <p class=" lg:mb-5 text-white">Contrary to popular belief, is not simply random text. It has roots in a
@@ -664,7 +664,7 @@
           </div>
 
         </div>
-        <div class="grid grid-cols-1 gap-4 lg:gap-10 md:grid-cols-2 lg:grid-cols-4 mt-32 lg:mt-52">
+        <div class="grid grid-cols-1 gap-4 lg:gap-10 md:grid-cols-2 lg:grid-cols-4 mt-32 md:mt-10 lg:mt-52">
           <div class=" card bg-transparent p-5">
             <figure>
               <img class="w-24" src="images/member1.png" alt="Shoes">
@@ -799,11 +799,11 @@
 
               </svg>
             </div>
-            <div class="tex text-center lg:flex-1">
+            <div class="tex lg:text-left text-center lg:flex-1">
 
 
               <h3 class="mb-5 mt-3 text-2xl text-[#121212] font-extrabold ">Dedicated Team</h3>
-              <hr class="text-black bg-black h-[2px] w-[100px]  mx-auto lg:mx-0">
+              <hr class="text-black bg-black h-[2px] w-[100px]   mx-auto lg:mx-0">
               <p class="mt-4 text-base text-second-text font-medium">Professional employees are there for you to pick
                 the most amazing and fresh fruits.</p>
             </div>
@@ -817,7 +817,7 @@
                   fill="black" />
               </svg>
             </div>
-            <div class="tex text-center lg:flex-1">
+            <div class="tex text-center lg:text-left lg:flex-1">
 
 
               <h3 class="mb-5 mt-3 text-2xl text-[#121212] font-extrabold ">Fresh is Best</h3>
@@ -875,7 +875,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="tex text-center lg:flex-1">
+            <div class="tex text-center lg:text-left lg:flex-1">
 
 
               <h3 class="mb-5 mt-3 text-2xl text-[#121212] font-extrabold ">Gift Certificates</h3>
